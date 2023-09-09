@@ -55,7 +55,7 @@
     <section id="transacao">
       <h2 class="titulo-balanco">Transações</h2>
 
-      <a href="#" onclick="Modal.open()" class="botao novo">+ Nova Transação</a>
+      <a href="#" onclick="Modulo.abrir()" class="botao novo">+ Nova Transação</a>
 
       <table id="tabela-dados">
         <thead>
@@ -96,9 +96,9 @@
             <input type="date" id="data" name="data" />
           </div>
 
-          <div class="grupo acoes>
-                      <a
-                        onclick=" Modal.close()" href="#" class="botao cancelar">Cancelar</a>
+          <div class="grupo acoes">
+                      <a 
+                      onclick="Modulo.fechar()" href="#" class="botao cancelar">Cancelar</a>
             <button>Salvar</button>
           </div>
         </form>
@@ -108,6 +108,8 @@
   <footer class="container">
     <p>UNIVESP - CONTROLE DE CAIXA AUTOMATIZADO - 2023 </p>
   </footer>
+
+  <script src="./Javascript/funcoes.js"></script>
 </body>
 
 </html>

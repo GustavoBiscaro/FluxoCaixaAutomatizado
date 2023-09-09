@@ -23,7 +23,7 @@ html {
 
 body {
     font-family: 'Rubik', sans-serif;
-    background: #fff;
+    border: 2px solid var(--purple-rain);
 }
 
 .titulo-balanco{
