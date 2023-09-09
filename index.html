@@ -1,124 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluxo de Caixa Automatizado - Univesp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Estilos/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Fluxo de Caixa Automatizado - Univesp</title>
 </head>
+
 <body>
-    <header>
-        <img src="./Imagens/Imagem-1-svg.svg" alt="Logo Univesp">
-    </header>
-    
-    <main class="container">
-        <section id="balanco">
-            <h2 class="titulo-balanco">Balanço</h2>
-            <div class="cartao">
-                
-            </div>
+  <header>
+    <img id="img-svg" src="./Imagens/Imagem-1-svg.svg" alt="Logo Univesp">
+  </header>
 
-            <div class="cartao">
-                <h3>
-                    <span>Entradas</span>
-                    <img src="./Imagens/entradas.svg" alt="Entradas">
-                </h3>
+  <main class="container">
+    <section id="balanco">
+      <h2 class="titulo-balanco">Balanço</h2>
+      <div class="cartao">
 
-                <p id="entradaDisplay">R$ 0,00</p>
-            </div>
-            <div class="cartao">
-                <h3>
-                    <span>Saídas</span>
-                    <img src="./Imagens/saidas.svg" alt="Entradas">
-                </h3>
-
-                <p id="saidaDisplay">R$ 0,00</p>
-            </div>
-
-            <div class="cartao total">
-                <h3>
-                    <span>Total</span>
-                    <img src="./Imagens/total.png" alt="Entradas">
-                </h3>
-
-                <p id="totalDisplay">R$ 0,00</p>
-            </div>
-        </section>
-
-        <section id="transacao">
-            <h2 class="titulo-balanco">Transações</h2>
-      
-            <a href="#" 
-            onclick="Modal.open()"
-            class="botao novo">+ Nova Transação</a>
-      
-            <table id="tabela-dados">
-              <thead>
-                <tr>
-                  <th>Descrição</th>
-                  <th>Valor</th>
-                  <th>Data</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-               
-              </tbody>
-            </table>
-          </section>
-    </main>
-
-    <div class="modulo-sobreposicao">
-        <div class="modulo">
-          <div id="formulario">
-            <h2>Nova Transção</h2>
-    
-            <form action="" onsubmit="Form.submit(event)">
-    
-                <div class="grupo">
-                  <label class="titulo-balanco" for="descricao">Descrição</label>
-                  <input 
-                          type="text" 
-                          id="descricao" 
-                          name="descricao"
-                          placeholder="Descrição"
-                          
-                  />
-                </div>
-    
-                <div class="grupo">
-                  <label class="titulo-balanco" for="quantia">Valor</label>
-                  <input 
-                          type="number" 
-                          step="0.01"
-                          id="quantia" 
-                          name="quantia"
-                          placeholder="0,00"
-                  />
-                  <small>Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
-                  </div>
-    
-                  <div class="grupo">
-                    <label class="titulo-balanco" for="data">Data</label>
-                    <input 
-                            type="date" 
-                            id="data" 
-                            name="data"
-                    />
-                    </div>
-    
-                    <div class="grupo acoes>
-                      <a
-                        onclick="Modal.close()"
-                       href="#" 
-                       class="botao cancelar">Cancelar</a>
-                      <button>Salvar</button>
-                    </div>
-            </form>
-          </div>
-        </div>
       </div>
-      <footer class="container">
-        <p>UNIVESP - CONTROLE DE CAIXA AUTOMATIZADO</p>
-      </footer>
+
+      <div class="cartao">
+        <h3>
+          <span>Entradas</span>
+          <img src="./Imagens/entradas.svg" alt="Entradas">
+        </h3>
+
+        <p id="entradaDisplay">R$ 0,00</p>
+      </div>
+      <div class="cartao">
+        <h3>
+          <span>Saídas</span>
+          <img src="./Imagens/saidas.svg" alt="Entradas">
+        </h3>
+
+        <p id="saidaDisplay">R$ 0,00</p>
+      </div>
+
+      <div class="cartao total">
+        <h3>
+          <span>Total</span>
+          <img src="./Imagens/total.svg" alt="Entradas">
+        </h3>
+
+        <p id="total-tela">R$ 0,00</p>
+      </div>
+    </section>
+
+    <section id="transacao">
+      <h2 class="titulo-balanco">Transações</h2>
+
+      <a href="#" onclick="Modal.open()" class="botao novo">+ Nova Transação</a>
+
+      <table id="tabela-dados">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <div class="modulo-sobreposicao">
+    <div class="modulo">
+      <div id="formulario">
+        <h2>Nova Transção</h2>
+
+        <form action="" onsubmit="Form.submit(event)">
+
+          <div class="grupo">
+            <label class="titulo-balanco" for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao" placeholder="Descrição" />
+          </div>
+
+          <div class="grupo">
+            <label class="titulo-balanco" for="quantia">Valor</label>
+            <input type="number" step="0.01" id="quantia" name="quantia" placeholder="0,00" />
+            <small>Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
+          </div>
+
+          <div class="grupo">
+            <label class="titulo-balanco" for="data">Data</label>
+            <input type="date" id="data" name="data" />
+          </div>
+
+          <div class="grupo acoes>
+                      <a
+                        onclick=" Modal.close()" href="#" class="botao cancelar">Cancelar</a>
+            <button>Salvar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="container">
+    <p>UNIVESP - CONTROLE DE CAIXA AUTOMATIZADO - 2023 </p>
+  </footer>
 </body>
+
 </html>
