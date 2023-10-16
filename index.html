@@ -27,27 +27,34 @@
 
       <div class="cartao">
         <h3>
+
+
           <span>Entradas</span>
           <img src="./Imagens/entradas.svg" alt="Entradas">
-        </h3>
 
+
+        </h3>
         <p id="entradaDisplay">R$ 0,00</p>
       </div>
+
+
       <div class="cartao">
         <h3>
-          <span>Saídas</span>
-          <img src="./Imagens/saidas.svg" alt="Entradas">
-        </h3>
 
+
+          <span>Saídas</span>
+          <img src="./Imagens/saidas.svg" alt="Saída">
+
+        </h3>
         <p id="saidaDisplay">R$ 0,00</p>
       </div>
 
       <div class="cartao total">
         <h3>
           <span>Total</span>
-          <img src="./Imagens/total.svg" alt="Entradas">
-        </h3>
+          <img src="./Imagens/total.svg" alt="Total">
 
+        </h3>
         <p id="total-tela">R$ 0,00</p>
       </div>
     </section>
@@ -55,7 +62,7 @@
     <section id="transacao">
       <h2 class="titulo-balanco">Transações</h2>
 
-      <a href="#" onclick="Modulo.abrir()" class="botao novo">+ Nova Transação</a>
+      <a href="#" onclick="Modal.abrir()" class="botao novo">+ Nova Transação</a>
 
       <table id="tabela-dados">
         <thead>
@@ -98,7 +105,7 @@
 
           <div class="grupo acoes">
                       <a 
-                      onclick="Modulo.fechar()" href="#" class="botao cancelar">Cancelar</a>
+                      onclick="Modal.fechar()" href="#" class="botao cancelar">Cancelar</a>
             <button>Salvar</button>
           </div>
         </form>
@@ -106,7 +113,7 @@
     </div>
   </div>
   <footer class="container">
-    <p>UNIVESP - CONTROLE DE CAIXA AUTOMATIZADO - 2023 </p>
+    UNIVESP - CONTROLE DE CAIXA AUTOMATIZADO - 2023
   </footer>
 
   <script src="./Javascript/funcoes.js"></script>

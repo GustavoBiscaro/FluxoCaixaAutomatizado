@@ -49,6 +49,8 @@ h2 {
     font-weight: normal;
 }
 
+
+
 a {
     color: var(--purple-rain);
     text-decoration: none;
@@ -289,6 +291,7 @@ footer {
     color: var(--purple-rain);
     font-weight: bold;
     opacity: 0.6;
+    width: 100%;
 }
 
 
