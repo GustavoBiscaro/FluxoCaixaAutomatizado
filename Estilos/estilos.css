@@ -245,8 +245,9 @@ table tbody tr:hover {
 }
 
 table tbody td{
-    background: linear-gradient(45deg, red, black);
-
+    background: linear-gradient(45deg, rgb(243, 241, 241), rgb(122, 116, 116));
+    color: black;
+    font-weight: bolder;
     padding: 1rem 2rem;
 }
 
