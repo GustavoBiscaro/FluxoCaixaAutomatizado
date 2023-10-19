@@ -6,10 +6,6 @@
     --saldo-positivo: #225c0d;
     --dark-red: #621818;
 }
-#img-svg {
-    width: 25%;
-    background-color: red;
-}
 
 * {
     margin: 0;
@@ -23,6 +19,7 @@ html {
 
 body {
     font-family: 'Rubik', sans-serif;
+    
 }
 
 header {
@@ -34,7 +31,9 @@ header {
     padding: 30px;
     color: rgba(242, 3, 3, 0.8);
     text-shadow: #621818;
+  
 }
+
 
 header img {
     display: flex;
@@ -338,7 +337,6 @@ footer {
     color: var(--purple-rain);
     font-weight: bold;
     opacity: 0.6;
-    width: 100%;
 }
 
 
