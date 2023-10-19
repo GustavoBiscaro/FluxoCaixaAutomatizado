@@ -109,35 +109,33 @@ const DOM = {
 }
 
 const Utils = {
-    formatoQuantia(valor) {
-        valor = Number(valor.replace(/\,\./g, "")) * 100
-
-        return valor
+    formatoQuantia(value){
+        value = Number(value.replace(/\,\./g, "")) * 100
+        
+        return value
     },
-
+  
     formatoData(date) {
-        const dataDividida = date.split("-")
-        return `${dataDividida[2]}/${dataDividida[1]}/${dataDividida[0]}`
-
+        const DataDividida = date.split("-")
+        return `${DataDividida[2]}/${DataDividida[1]}/${DataDividida[0]}`
     },
-
-    formatoMoeda(valor) {
-        const sinal = Number(valor) < 0 ? "-" : ""
-
-        valor = String(valor).replace(/\D/g, "")
-
-        valor = Number(valor) / 100
-
-        valor = valor.toLocaleString("pt-BR", {
-            estilo: "moeda",
-            moeda: "BRL"
+  
+    formatoMoeda(value) {
+        const sinal = Number(value) < 0 ? "-" : ""
+  
+        value = String(value).replace(/\D/g, "")
+  
+        value = Number(value) / 100
+  
+        value = value.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL"
         })
-
-        return sinal + valor
-
+  
+       return sinal + value
     }
-}
-
+  }
+  
 const Form = {
     descricao: document.querySelector('input#descricao'),
     quantia: document.querySelector('input#quantia'),
